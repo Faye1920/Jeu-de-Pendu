@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6705488F2A9995120068E54C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6705488E2A9995120068E54C /* PlayerViewController.swift */; };
+		670548912A9998180068E54C /* JoueurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670548902A9998180068E54C /* JoueurViewController.swift */; };
+		670548932A9A365D0068E54C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670548922A9A365D0068E54C /* ScoreViewController.swift */; };
+		670548992A9A57D40068E54C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670548982A9A57D40068E54C /* Score.swift */; };
+		671C81322A5C7FEF00C46264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C81312A5C7FEF00C46264 /* AppDelegate.swift */; };
+		671C81342A5C7FEF00C46264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C81332A5C7FEF00C46264 /* SceneDelegate.swift */; };
+		671C81392A5C7FEF00C46264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C81372A5C7FEF00C46264 /* Main.storyboard */; };
+		671C813B2A5C7FF000C46264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671C813A2A5C7FF000C46264 /* Assets.xcassets */; };
+		671C813E2A5C7FF000C46264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671C813C2A5C7FF000C46264 /* LaunchScreen.storyboard */; };
+		671C814B2A5C806C00C46264 /* ListeDeFilmsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C814A2A5C806C00C46264 /* ListeDeFilmsData.swift */; };
+		671C814D2A5C807700C46264 /* FilmSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C814C2A5C807700C46264 /* FilmSchema.swift */; };
+		671C814F2A5C80A300C46264 /* ImagesSequenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C814E2A5C80A300C46264 /* ImagesSequenceData.swift */; };
+		671C81522A5C80C000C46264 /* GestionnaireDeFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C81512A5C80C000C46264 /* GestionnaireDeFilms.swift */; };
+		671C81542A5C80CB00C46264 /* JeuPendu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C81532A5C80CB00C46264 /* JeuPendu.swift */; };
+		676727972A945A730026AE2F /* WordSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727962A945A730026AE2F /* WordSchema.swift */; };
+		676727992A945ABA0026AE2F /* GestionnaireDeWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727982A945ABA0026AE2F /* GestionnaireDeWord.swift */; };
+		6767279B2A945AE80026AE2F /* JeuMot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6767279A2A945AE80026AE2F /* JeuMot.swift */; };
+		676727A12A957AB10026AE2F /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727A02A957AB10026AE2F /* FilmViewController.swift */; };
+		676727A32A957D2D0026AE2F /* MotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727A22A957D2D0026AE2F /* MotViewController.swift */; };
+		676727A92A95A0D00026AE2F /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727A82A95A0D00026AE2F /* SuccessViewController.swift */; };
+		676727AB2A9658550026AE2F /* JoueurSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727AA2A9658550026AE2F /* JoueurSchema.swift */; };
+		676727AF2A965BCA0026AE2F /* ReussiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676727AE2A965BCA0026AE2F /* ReussiViewController.swift */; };
+		67781BA32AB10257000645CC /* Pendix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67781BA12AB10257000645CC /* Pendix.xcdatamodeld */; };
+		67781BA52AB10448000645CC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67781BA42AB10448000645CC /* CoreDataStack.swift */; };
+		67781BA72AB104CE000645CC /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67781BA62AB104CE000645CC /* ScoreStore.swift */; };
+		67DD61552A819AB800D5C7B1 /* DarumadropOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 671C81552A5C80F000C46264 /* DarumadropOne-Regular.ttf */; };
+		67E6FAE62AA8BAA5008C9024 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6FAE52AA8BAA5008C9024 /* PreferenceViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6705488E2A9995120068E54C /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		670548902A9998180068E54C /* JoueurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoueurViewController.swift; sourceTree = "<group>"; };
+		670548922A9A365D0068E54C /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		670548982A9A57D40068E54C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		671C812E2A5C7FEF00C46264 /* Pendix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pendix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		671C81312A5C7FEF00C46264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		671C81332A5C7FEF00C46264 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		671C81382A5C7FEF00C46264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		671C813A2A5C7FF000C46264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671C813D2A5C7FF000C46264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		671C813F2A5C7FF000C46264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671C814A2A5C806C00C46264 /* ListeDeFilmsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeDeFilmsData.swift; sourceTree = "<group>"; };
+		671C814C2A5C807700C46264 /* FilmSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmSchema.swift; sourceTree = "<group>"; };
+		671C814E2A5C80A300C46264 /* ImagesSequenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesSequenceData.swift; sourceTree = "<group>"; };
+		671C81512A5C80C000C46264 /* GestionnaireDeFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionnaireDeFilms.swift; sourceTree = "<group>"; };
+		671C81532A5C80CB00C46264 /* JeuPendu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeuPendu.swift; sourceTree = "<group>"; };
+		671C81552A5C80F000C46264 /* DarumadropOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DarumadropOne-Regular.ttf"; sourceTree = "<group>"; };
+		676727962A945A730026AE2F /* WordSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSchema.swift; sourceTree = "<group>"; };
+		676727982A945ABA0026AE2F /* GestionnaireDeWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionnaireDeWord.swift; sourceTree = "<group>"; };
+		6767279A2A945AE80026AE2F /* JeuMot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeuMot.swift; sourceTree = "<group>"; };
+		676727A02A957AB10026AE2F /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		676727A22A957D2D0026AE2F /* MotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotViewController.swift; sourceTree = "<group>"; };
+		676727A82A95A0D00026AE2F /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		676727AA2A9658550026AE2F /* JoueurSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoueurSchema.swift; sourceTree = "<group>"; };
+		676727AE2A965BCA0026AE2F /* ReussiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReussiViewController.swift; sourceTree = "<group>"; };
+		67781BA22AB10257000645CC /* Pendix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pendix.xcdatamodel; sourceTree = "<group>"; };
+		67781BA42AB10448000645CC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		67781BA62AB104CE000645CC /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
+		67E6FAE52AA8BAA5008C9024 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671C812B2A5C7FEF00C46264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671C81252A5C7FEF00C46264 = {
+			isa = PBXGroup;
+			children = (
+				671C81302A5C7FEF00C46264 /* Pendix */,
+				671C812F2A5C7FEF00C46264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		671C812F2A5C7FEF00C46264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				671C812E2A5C7FEF00C46264 /* Pendix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		671C81302A5C7FEF00C46264 /* Pendix */ = {
+			isa = PBXGroup;
+			children = (
+				671C81452A5C7FFD00C46264 /* Model */,
+				671C81462A5C800200C46264 /* Ressources */,
+				671C81472A5C800B00C46264 /* Controllers */,
+				671C81482A5C801200C46264 /* Views */,
+				671C813F2A5C7FF000C46264 /* Info.plist */,
+				671C81492A5C801A00C46264 /* font */,
+			);
+			path = Pendix;
+			sourceTree = "<group>";
+		};
+		671C81452A5C7FFD00C46264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67781BA02AB10221000645CC /* CoreData */,
+				671C814A2A5C806C00C46264 /* ListeDeFilmsData.swift */,
+				671C814C2A5C807700C46264 /* FilmSchema.swift */,
+				671C814E2A5C80A300C46264 /* ImagesSequenceData.swift */,
+				671C81512A5C80C000C46264 /* GestionnaireDeFilms.swift */,
+				671C81532A5C80CB00C46264 /* JeuPendu.swift */,
+				676727962A945A730026AE2F /* WordSchema.swift */,
+				676727982A945ABA0026AE2F /* GestionnaireDeWord.swift */,
+				6767279A2A945AE80026AE2F /* JeuMot.swift */,
+				676727AA2A9658550026AE2F /* JoueurSchema.swift */,
+				67781BA62AB104CE000645CC /* ScoreStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		671C81462A5C800200C46264 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				671C81312A5C7FEF00C46264 /* AppDelegate.swift */,
+				671C81332A5C7FEF00C46264 /* SceneDelegate.swift */,
+				671C813A2A5C7FF000C46264 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		671C81472A5C800B00C46264 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				676727A02A957AB10026AE2F /* FilmViewController.swift */,
+				676727A22A957D2D0026AE2F /* MotViewController.swift */,
+				676727A82A95A0D00026AE2F /* SuccessViewController.swift */,
+				676727AE2A965BCA0026AE2F /* ReussiViewController.swift */,
+				6705488E2A9995120068E54C /* PlayerViewController.swift */,
+				670548902A9998180068E54C /* JoueurViewController.swift */,
+				670548922A9A365D0068E54C /* ScoreViewController.swift */,
+				67E6FAE52AA8BAA5008C9024 /* PreferenceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		671C81482A5C801200C46264 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				671C81372A5C7FEF00C46264 /* Main.storyboard */,
+				671C813C2A5C7FF000C46264 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		671C81492A5C801A00C46264 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				671C81552A5C80F000C46264 /* DarumadropOne-Regular.ttf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		67781BA02AB10221000645CC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				670548982A9A57D40068E54C /* Score.swift */,
+				67781BA12AB10257000645CC /* Pendix.xcdatamodeld */,
+				67781BA42AB10448000645CC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		671C812D2A5C7FEF00C46264 /* Pendix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671C81422A5C7FF000C46264 /* Build configuration list for PBXNativeTarget "Pendix" */;
+			buildPhases = (
+				671C812A2A5C7FEF00C46264 /* Sources */,
+				671C812B2A5C7FEF00C46264 /* Frameworks */,
+				671C812C2A5C7FEF00C46264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pendix;
+			productName = Pendix;
+			productReference = 671C812E2A5C7FEF00C46264 /* Pendix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		671C81262A5C7FEF00C46264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					671C812D2A5C7FEF00C46264 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 671C81292A5C7FEF00C46264 /* Build configuration list for PBXProject "Pendix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 671C81252A5C7FEF00C46264;
+			productRefGroup = 671C812F2A5C7FEF00C46264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				671C812D2A5C7FEF00C46264 /* Pendix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		671C812C2A5C7FEF00C46264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67DD61552A819AB800D5C7B1 /* DarumadropOne-Regular.ttf in Resources */,
+				671C813E2A5C7FF000C46264 /* LaunchScreen.storyboard in Resources */,
+				671C813B2A5C7FF000C46264 /* Assets.xcassets in Resources */,
+				671C81392A5C7FEF00C46264 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		671C812A2A5C7FEF00C46264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671C81522A5C80C000C46264 /* GestionnaireDeFilms.swift in Sources */,
+				671C81542A5C80CB00C46264 /* JeuPendu.swift in Sources */,
+				6767279B2A945AE80026AE2F /* JeuMot.swift in Sources */,
+				676727972A945A730026AE2F /* WordSchema.swift in Sources */,
+				670548912A9998180068E54C /* JoueurViewController.swift in Sources */,
+				671C814B2A5C806C00C46264 /* ListeDeFilmsData.swift in Sources */,
+				671C814D2A5C807700C46264 /* FilmSchema.swift in Sources */,
+				67781BA32AB10257000645CC /* Pendix.xcdatamodeld in Sources */,
+				671C81322A5C7FEF00C46264 /* AppDelegate.swift in Sources */,
+				671C814F2A5C80A300C46264 /* ImagesSequenceData.swift in Sources */,
+				676727AB2A9658550026AE2F /* JoueurSchema.swift in Sources */,
+				676727992A945ABA0026AE2F /* GestionnaireDeWord.swift in Sources */,
+				676727A32A957D2D0026AE2F /* MotViewController.swift in Sources */,
+				676727A12A957AB10026AE2F /* FilmViewController.swift in Sources */,
+				670548992A9A57D40068E54C /* Score.swift in Sources */,
+				671C81342A5C7FEF00C46264 /* SceneDelegate.swift in Sources */,
+				67E6FAE62AA8BAA5008C9024 /* PreferenceViewController.swift in Sources */,
+				67781BA52AB10448000645CC /* CoreDataStack.swift in Sources */,
+				676727A92A95A0D00026AE2F /* SuccessViewController.swift in Sources */,
+				67781BA72AB104CE000645CC /* ScoreStore.swift in Sources */,
+				676727AF2A965BCA0026AE2F /* ReussiViewController.swift in Sources */,
+				6705488F2A9995120068E54C /* PlayerViewController.swift in Sources */,
+				670548932A9A365D0068E54C /* ScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		671C81372A5C7FEF00C46264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671C81382A5C7FEF00C46264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		671C813C2A5C7FF000C46264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671C813D2A5C7FF000C46264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		671C81402A5C7FF000C46264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		671C81412A5C7FF000C46264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		671C81432A5C7FF000C46264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pendix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yinhong.Pendix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		671C81442A5C7FF000C46264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pendix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yinhong.Pendix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		671C81292A5C7FEF00C46264 /* Build configuration list for PBXProject "Pendix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671C81402A5C7FF000C46264 /* Debug */,
+				671C81412A5C7FF000C46264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671C81422A5C7FF000C46264 /* Build configuration list for PBXNativeTarget "Pendix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671C81432A5C7FF000C46264 /* Debug */,
+				671C81442A5C7FF000C46264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		67781BA12AB10257000645CC /* Pendix.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				67781BA22AB10257000645CC /* Pendix.xcdatamodel */,
+			);
+			currentVersion = 67781BA22AB10257000645CC /* Pendix.xcdatamodel */;
+			path = Pendix.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 671C81262A5C7FEF00C46264 /* Project object */;
+}
